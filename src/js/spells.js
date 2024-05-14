@@ -1,4 +1,5 @@
-export const getSpells = ({ special } = object) => {
+export const getSpells = (object) => {
+	const { special } = object; // изначально я выполнил это прям в аргументе но линт выдал ошибку как быть
 	special.forEach(item => {
 		if(!item.description){
 			item.description = 'Описание недоступно';
@@ -6,25 +7,3 @@ export const getSpells = ({ special } = object) => {
 	})
 	return special
 };
-const character = {
-	name: 'Лучник',
-	type: 'Bowman',
-	health: 50,
-	level: 3,
-	attack: 40,
-	defence: 10,
-	special: [
-	  {
-		id: 8,
-		name: 'Двойной выстрел',
-		icon: 'http://...',
-		description: 'Двойной выстрел наносит двойной урон'
-	  }, 
-	  {
-		id: 9,
-		name: 'Нокаутирующий удар',
-		icon: 'http://...'
-		// <- обратите внимание, описание "засекречено"
-	  }
-	]	
-  }
