@@ -1,0 +1,19 @@
+{
+  "name": "objects",
+  "version": "1.0.0",
+  "description": "homework",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fkupme/objects.git"
+  },
+  "author": "fkupme",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fkupme/objects/issues"
+  },
+  "homepage": "https://github.com/fkupme/objects#readme"
+}
