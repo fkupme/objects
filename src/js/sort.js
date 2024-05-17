@@ -19,9 +19,6 @@ export const sort = (object, array) => {
 		if (a.key[0] < b.key[0]) {
 			return -1
 		};
-		if (a.key[0] === b.key[0]) {
-			return 0
-		};
 	});
 	return [...sorted, ...unsorted]
 }
